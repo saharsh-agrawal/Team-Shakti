@@ -1,80 +1,39 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<title>Contact Us | Team Shakti</title>
 <link rel="shortcut icon" href="ts.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
-<title>Contact Us | Team Shakti</title>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="header.css">
-<link rel="stylesheet" href="contact.css">
-
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/header.css">
 <script>
-function togglesidebar()
-{
-  document.getElementById("sidebar").classList.toggle('active');
-  document.getElementById("toggle-btn").classList.toggle('active');
-}
+	
+	window.onload=function(){function a(a,b){var c=/^(?:file):/,d=new XMLHttpRequest,e=0;d.onreadystatechange=function(){4==d.readyState&&(e=d.status),c.test(location.href)&&d.responseText&&(e=200),4==d.readyState&&200==e&&(a.outerHTML=d.responseText)};try{d.open("GET",b,!0),d.send()}catch(f){}}var b,c=document.getElementsByTagName("*");for(b in c)c[b].hasAttribute&&c[b].hasAttribute("data-include")&&a(c[b],c[b].getAttribute("data-include"))};
+    
+	function togglesidebar()
+    {
+      document.getElementById("sidebar").classList.toggle('active');
+      document.getElementById("toggle-btn").classList.toggle('active');
+    }
+
 </script>
+
+<link rel="stylesheet" href="css/contact.css">
 
 </head>
 
 <body>
 
-<a href="#">
-	<img src="ts.jpg" id='logo'>
-</a>
-
-<div class="navbar">
-
-	<ul>
-
-	<li><a href="#">Home</a></li>
-	<li><a href="#">About</a></li>
-	<li><a href="#">Projects</a></li>
-	<li><a href="#">Team</a></li>
-	<li><a href="#">Contact Us</a></li>
-
-	</ul>
-
-	<form class="search-box">
-	<input type="text" placeholder="Search">
-	<button>Search</button>
-	</form>
-	
-</div>
-
-<div id="container">
-	<div id="header">
-		TEAM SHAKTI
-	</div>
-</div>
-
-<div class="toggle-btn" id="toggle-btn" onclick=togglesidebar()>
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-
-<div id="sidebar">
-    <ul>
-        <font size=3>
-            <li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Projects</a></li>
-			<li><a href="#">Team</a></li>
-			<li><a href="#">Contact Us</a></li>
-		</font>
-	</ul>
-</div>
+	<div data-include="header.html"></div>
 
 <DIV CLASS="contact-box">
 	
 	<IMG SRC="ts.jpg" class="avatar">
-	<H1>Our Contact Details</H1>
+	<H1 style="font-weight: 1000 !important;">Our Contact Details</H1>
 	
-	<ul class="contact-details list-unstyled">
+	<ul class="contact-details list-unstyled" style="font-size: 15px !important;">
 		<li>
 			<i class="fa fa-home"></i>
 			Team Shakti
@@ -93,7 +52,9 @@ function togglesidebar()
 		<br>
 		<li class="contactmail">
 			<i class="fa fa-envelope-o"></i>
-			<a href="mailto:dakshvarshney2002@gmail.com">dakshvarshney2002@gmail.com</a>&nbsp;&nbsp;or
+			<a href="mailto:dakshvarshney2002@gmail.com">dakshvarshney2002@gmail.com</a>
+			<br>
+			or
 			<br>
 			<a href="sarthak.agarwal2021@gmail.com">sarthak.agarwal2021@gmail.com</a>
 		</li>
@@ -110,7 +71,7 @@ function togglesidebar()
 
 <i class="fa fa-envelope"></i>
 
-<H1>Contact Us</H1>
+<H1 style="font-weight: 1000 !important;">Contact Us</H1>
 
 <FORM autocomplete="off" NAME="loginform" ACTION="" METHOD="post">
 

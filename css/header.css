@@ -16,9 +16,9 @@ body{
 	z-index:3;
 }
 
-/*NAVBAR*/
+/*navbar-TS*/
 
-.navbar{
+.navbar-TS{
 	position:fixed;
 	top:0;
 	width:100%;
@@ -26,16 +26,16 @@ body{
 	overflow:auto;
 	z-index:2;
 }
-.navbar ul{
+.navbar-TS ul{
 	padding:0px;
 	margin:0px 80px ;
 	list-style:none;
 	line-height:60px;
 }
-.navbar ul li{
+.navbar-TS ul li{
 	float:left;
 }
-.navbar ul li a{
+.navbar-TS ul li a{
 	background:#089900;
 	color:white;
 	width:100px;
@@ -47,7 +47,7 @@ body{
 	font-family:sans-serif;
 	letter-spacing:0.5px;
 }
-.navbar ul li a:hover{
+.navbar-TS ul li a:hover{
 	color:#fff;
 	font-size:19px;
 }
@@ -56,7 +56,7 @@ body{
 	float:right;
 	margin-right:20px;
 }
-.navbar input[type=text]{
+.navbar-TS input[type=text]{
 	padding:7px;
 	border:none;
 	font-size:16px;
@@ -149,7 +149,7 @@ button{
 }
 
 @media only screen and (max-width:899.9px){
-	.navbar{
+	.navbar-TS{
 		display:none;
 	}
 	#logo{
